@@ -1,0 +1,204 @@
+
+body{
+    background-image: url(happy\ day.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+    color: white;
+    font-family:"syne", sans-serif ;
+}
+
+.container{
+    width: 300px;
+    height: 90vh;
+    border: 2px solid rgb(228,228, 228);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) ;
+    border-radius: 10px;
+    transition: 1s all;
+    backdrop-filter: blur(10px);
+}
+.dot-container{
+  display: flex;
+  align-items: center;
+  height: 50px;
+  gap: 15px;
+  cursor: pointer;
+
+}
+.dot{
+   width: 15px;
+   height: 15px;
+   border-radius: 50%;
+   background-color: red;
+   position: relative;
+   left: 15px;
+
+}
+.dot:nth-child(2){
+    background-color: yellow;
+}
+.dot:nth-child(3){
+    background-color: green;
+}
+
+h1{
+    position: relative;
+    left: 15px;
+    bottom: 15px;
+    display: flex;
+    justify-content: start;
+    color: white;
+}
+.line{
+     width: 100%;
+     height: 1px;
+     background: linear-gradient(120deg,transparent,#ffffff,transparent);
+     position: relative;
+     top: -20px;
+}
+
+.profile{
+    position: relative;
+    top: -12px;
+    width: 100%;
+    height: 75px;
+    display: flex;
+    gap: 15px;
+
+}
+
+.logo{
+    width: 60px;
+    height: 60px;
+    margin-left: 15px;
+    border-radius: 50%;
+    border: black 2px;
+}
+.profile-text{
+   width: 150px;
+   height: 75px;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+
+}
+h2{
+ font-size: 16px;
+}
+.account{
+    font-size: 10px;
+    text-align: start;
+    position: relative;
+    top: -20px;
+    left: 1px;
+}
+.toggle-box{
+    width: 150px;
+    height: 75px;
+    display: grid;
+    place-content: center;
+    position: relative;
+    top: -10px;
+    left: -30px;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+i .fa-plus{
+    color: #ffffff;
+    font-size: 16px;
+    
+}
+.menu{
+    font-size: 16px;
+    position: relative;
+    top: -15px;
+    left: 25px;
+}
+ul{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 10px;
+
+}
+li{
+    width: 100%;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    left: -40px;
+    cursor: pointer;
+}
+li:hover{
+    background: color #486;
+
+}
+i{
+    position: relative;
+    left: 25px;
+}
+.no-num{
+    border-radius: 50%;
+    position: relative;
+    left: 120px;
+    text-shadow: 0 0 15px #fff;
+}
+span{
+    position: relative;
+    left: 20px;
+}
+
+.logout-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 130px;
+    gap: 10px;
+    position: relative;
+    top: -15px;
+    cursor: pointer;
+}
+
+
+/* active toggle css */
+
+.active{
+    transition: 1s all;
+}
+.container.active{
+    width: 100px;
+}
+.container.active h1{
+    font-size: 18px;
+    position: relative;
+    left: 6px;
+}
+.container.active span{
+    display: none;
+}
+
+.container.active i{
+    position: relative;
+    left: 40px;
+}
+.container.active .toggle-box i .fa-plus{
+    position: relative;
+    left: -5px;
+    font-size: 0px;
+
+}
+
+.container.active .profile-text{
+    display: none;
+}
